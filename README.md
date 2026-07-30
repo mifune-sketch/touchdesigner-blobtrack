@@ -6,7 +6,7 @@
 
 
 
-https://github.com/user-attachments/assets/f62809b0-5cd2-4d17-8c19-e1bcf206ec5c
+
 
 
 
@@ -16,15 +16,8 @@ https://github.com/user-attachments/assets/ac012a94-341e-4ebd-8f29-cb02d3efe136
 
 
 
-https://github.com/user-attachments/assets/c4f33d3b-9cc2-44b7-9889-0db69b81cbac
 
 
-
-https://github.com/user-attachments/assets/e20e7d40-2cbc-40c2-811c-256069246b9c
-
-
-
-[README.md](https://github.com/user-attachments/files/30547624/README.md)
 # Blobtracking.tox
 
 TouchDesigner用の汎用ブロブトラッキングコンポーネントです。
@@ -37,6 +30,8 @@ TouchDesigner用の汎用ブロブトラッキングコンポーネントです�
 ざっくり言うと、映像の中で動いているものを四角い枠で囲って、その位置とサイズをリアルタイムに取り出せるようにするツールです。
 
 インタラクティブな映像作品、モーションセンシング、簡易的な人物・物体トラッキングなどに使えます。
+
+
 
 ## 仕組み（処理の流れ）
 
@@ -52,6 +47,12 @@ TouchDesigner用の汎用ブロブトラッキングコンポーネントです�
 
 ## 使い方
 
+
+https://github.com/user-attachments/assets/4f3b0be7-6e89-4b6f-92a9-b4211431a214
+
+
+
+
 1. `Blobtracking.tox` をTouchDesignerのネットワークに配置します
 2. 映像ソース（Movie File In、Device Inなど、種類は問いません）を `Blobtracking.tox` の入力に接続します
 3. 出力される `tx` / `ty` / `sx` / `sy` チャンネルから、検出されたブロブの位置とサイズを取得できます
@@ -65,7 +66,10 @@ TouchDesigner用の汎用ブロブトラッキングコンポーネントです�
 
 ### Brob track（検出の調整）
 
+
+
 ブロブ本体の感度・消失時間・最大サイズ・最小サイズは、こちらのパラメータで変更できます。
+<img width="1002" height="603" alt="スクリーンショット 2026-07-30 23 00 38" src="https://github.com/user-attachments/assets/5ff86405-59b1-4a2b-a6f0-87dc0b0db532" />
 
 | パラメータ | 説明 |
 |---|---|
@@ -79,9 +83,13 @@ TouchDesigner用の汎用ブロブトラッキングコンポーネントです�
 | Skip Duplicate Frames | 映像側のフレームが実際には進んでいないタイミングで無駄な再計算をスキップし、負荷を抑える機能です。基本的にはオンのままで問題ありません |
 | Reset IDs | ブロブの追跡状態をリセットします |
 
+
+
 ### Render（見た目の調整）
 
 検出結果を確認しやすいように、ブロブを映像として描画するためのパラメータです。色や太さは自由に変えられるので、作品に合わせて調整してください。
+
+<img width="827" height="393" alt="スクリーンショット 2026-07-31 0 39 02" src="https://github.com/user-attachments/assets/c43cdff1-1393-4057-a8c6-560549f44947" />
 
 | パラメータ | 説明 |
 |---|---|
@@ -99,6 +107,12 @@ TouchDesigner用の汎用ブロブトラッキングコンポーネントです�
 - TouchDesigner（Script CHOPを使用しています）
 
 ## 現在のステータス
+
 現在ベータ版です。基本的な検出・追跡機能は動作しますが、今後調整が入る可能性があります。
 また制作物等や企画等で使用する場合は製作者に一報よろしくお願いします。
+
+https://github.com/user-attachments/assets/c4f33d3b-9cc2-44b7-9889-0db69b81cbac
+
+https://github.com/user-attachments/assets/e20e7d40-2cbc-40c2-811c-256069246b9c
+
 
